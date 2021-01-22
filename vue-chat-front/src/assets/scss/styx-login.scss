@@ -1,0 +1,80 @@
+
+.styx-chat__login__container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.styx-chat__login {
+
+    background-color: rgba(0,0,0,0.03);
+    padding: 2rem;
+    width: 80%;
+    max-width: 25rem;
+    box-shadow: 0 0 2px rgba(0,0,0,0.1);
+    position: relative;
+
+}
+
+.styx-chat__login__label {
+
+    color: grey;
+    margin-right: 0.8rem;
+    font-size: 0.9rem;
+    font-weight: 300;
+
+}
+
+.styx-chat__login__input {
+
+    width: 70%;
+    border: none;
+    padding: 0.2rem;
+    font-family: $font-family;
+
+}
+
+.styx-chat__login__error {
+
+    position: absolute;
+    bottom: 105%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 2px rgba(0,0,0,0.1);
+    color: red;
+    font-weight: 300;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 0.6rem;
+
+}
+
+.styx-chat__login__submit {
+
+    border: 0;
+    background-color: #fff;
+    font-family: $font-family;
+    width: 100%;
+    background-color: #000000;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+.styx-chat__login {
+
+    .styx-chat__form__inputgroup {
+
+        justify-content: flex-end;
+        margin-bottom: 0.3rem;
+
+    }
+
+}

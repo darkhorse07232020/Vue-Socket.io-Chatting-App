@@ -1,0 +1,100 @@
+.styx-chat__layout {
+
+    max-width: 61.875rem;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: calc(100% - 120px);
+
+    @media all and (min-width: 992px) {
+
+        display: grid;
+        height: calc(100vh - 150px);
+        grid-template-columns: 150px 150px 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "users users chat chat chat chat";
+
+    }
+
+}
+
+.styx-chat__header {
+    
+    max-width: 61.875rem;
+    margin: 0 auto;
+    grid-area: header;
+    background-color: rgba(0,0,0,0.02);
+    border-bottom: 1px solid rgba(0,0,0,0.03);
+    height: 75px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 1rem;
+    align-items: center;
+    position: relative;
+    z-index: $z-index-header;
+
+    .styx-chat__header__logo {
+
+        width: 100%;
+        position: absolute;
+        top: 10px;
+        left: 0;
+
+        svg {
+
+            max-height: 210px;
+
+        }
+
+    }
+
+}
+
+.styx-chat__footer {
+
+    max-width: 61.875rem;
+    margin: 0 auto;
+    grid-area: footer;
+    background-color: rgba(0,0,0,0.02);
+    border-top: 1px solid rgba(0,0,0,0.03);
+    height: 75px;
+
+}
+
+.styx-chat__container {
+
+    max-width: 61.875rem;
+    margin: 0 auto;
+    height: calc(100vh - 120px);
+
+    @media all and (min-width: 992px) {
+
+        height: auto;
+        min-height: calc(100vh - 150px);
+
+    }
+
+}
+
+.styx-chat__form__input {
+
+    width: 100%;
+    display: block;
+    border: 0;
+    font-family: $font-family;
+    width: 100%;
+
+}
+
+.styx-chat__footer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: rgba(0,0,0,0.4);
+
+}
